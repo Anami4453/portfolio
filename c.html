@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>contact me</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: white;
+            margin: 0%;
+            background-color: rgb(6, 75, 75);
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(233, 237, 237);
+        }
+
+        nav ul li a:hover {
+            font-size: 1.02rem;
+            color: rgb(9, 162, 162);
+        }
+
+        .left {
+            margin-left: 10px;
+            color: #f4f4f4;
+            font-size: 2rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-left,
+        .contact-right {
+            flex: 1px;
+            padding: 40px
+        }
+
+        .contact-left p {
+            margin-top: 30px;
+        }
+
+        .contact-left p i {
+            color: rgb(8, 67, 67);
+            margin-right: 15px;
+            font-size: 25px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #054044;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: #032830;
+            font-size: 1.8rem;
+        }
+
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 7, 13, 0.1);
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #021820;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #022127;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #054044;
+        }
+
+        footer hr {
+            border: 0;
+            height: 1px;
+            background-color: rgb(1, 28, 28);
+            margin: 20px 60px;
+        }
+        .footer-rights{
+    text-align: center;
+    color: #022c2f;
+
+}
+    </style>
+</head>
+<header>
+    <nav>
+        <div class="left"><b>PORTFOLIO</b></div>
+        <div class="right"></div>
+        <ul>
+            <li><a href="p.html">Home</a></li>
+            <li><a href="A.html">About</a></li>
+            <li><a href="s.html">Skills</a></li>
+            <li><a href="pr.html">Project</a></li>
+            <li><a href="https://tomato-valina-35.tiiny.site">Resume</a></li>
+            <li><a href="c.html">contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@exmp.com</p>
+                    <p><i class="fa-solid fa-phone"></i>5456785467</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Anami4453 "><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/anam-ahmad-01868b264 "><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <br>
+
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+       <hr>
+    <div class="footer-rights">
+        www.anamsportfolio.com | All rights reserved
+    </div>
+</footer>
+</html>
